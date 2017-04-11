@@ -1,0 +1,36 @@
+body {
+  font-family: "Times New Roman", Georgia, Serif; }
+
+.logo {
+  width: 200px; }
+
+.validite {
+  width: 100px; }
+
+.right {
+  float: right; }
+
+nav {
+  float: left;
+  width: 200px;
+  font-size: 80%; }
+
+section {
+  margin-left: 200px;
+  border-left: 4px;
+  padding-left: 4px;
+  border-left: 1px gray ridge;
+  min-height: 600px; }
+
+h1 {
+  font-size: 400%;
+  text-align: center;
+  text-decoration: underline; }
+
+h2 {
+  font-size: 400%;
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
