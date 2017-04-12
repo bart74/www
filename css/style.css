@@ -5,7 +5,13 @@ body {
   width: 200px; }
 
 .validite {
-  width: 100px; }
+  width: 100px;
+  position: absolute;
+  bottom: 0; }
+
+.nav {
+  font-size: 120%;
+  text-align: left; }
 
 nav {
   float: left;
