@@ -10,14 +10,14 @@ body {
 nav {
   float: left;
   width: 200px;
-  font-size: 80%; }
+  font-size: 80%;
+  border-right: 1px gray ridge;
+  min-height: 600px; }
 
 section {
   margin-left: 200px;
   border-left: 4px;
-  padding-left: 4px;
-  border-left: 1px gray ridge;
-  min-height: 600px; }
+  padding-left: 4px; }
 
 h1 {
   font-size: 400%;
