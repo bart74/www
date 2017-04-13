@@ -1,8 +1,12 @@
 body {
-  font-family: "Times New Roman", Georgia, Serif; }
+  font-family: "Times New Roman", Georgia, Serif;
+  float: top; }
 
 .logo {
   width: 200px; }
+
+.head {
+  border-bottom: 1px gray ridge; }
 
 .validite {
   width: 100px;
