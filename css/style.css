@@ -1,12 +1,18 @@
 body {
-  font-family: "Times New Roman", Georgia, Serif;
-  float: top; }
+  font-family: "Times New Roman", Georgia, Serif; }
 
 .logo {
   width: 200px; }
 
 .head {
-  border-bottom: 1px gray ridge; }
+  border-bottom: 1px gray ridge;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 200px;
+  height: 80px;
+  z-index: 999; }
 
 .validite {
   width: 100px;
@@ -18,19 +24,24 @@ body {
   text-align: left; }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   float: left;
   width: 200px;
   font-size: 80%;
   border-right: 1px gray ridge;
-  min-height: 600px; }
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  z-index: 998; }
 
 section {
-  margin-left: 200px;
-  border-left: 4px;
-  padding-left: 4px; }
+  position: absolute;
+  top: 80px;
+  left: 200px; }
 
 h1 {
-  font-size: 400%;
+  font-size: 200%;
   text-align: center; }
 
 h2 {
@@ -38,5 +49,15 @@ h2 {
   font-style: italic;
   margin-left: 10px;
   margin-right: 10px; }
+
+table, th, td, tr {
+  border: 1px gray ridge; }
+
+.panneau {
+  min-width: 120px;
+  height: 120px; }
+
+.desc {
+  width: 85vw; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 $navwidth : 200px
+$panneau-size : 120px
 
 body
 	font-family : "Times New Roman" , Georgia , Serif
@@ -8,6 +9,13 @@ body
 
 .head
 	border-bottom : 1px gray ridge
+	background-color: #FFFFFF
+	position: fixed
+	top : 0
+	right : 0
+	left : $navwidth
+	height : $navwidth * 0.4
+	z-index: 999
 
 .validite
 	width : $navwidth / 2
@@ -19,26 +27,38 @@ body
 	text-align : left
 
 nav
+	position: fixed
+	top : 0
+	left : 0
 	float : left
 	width : $navwidth
 	font-size : 80%
 	border-right : 1px gray ridge
-	min-height : 600px
+	min-height : 100vh
+	background-color: #FFFFFF
+	z-index: 998
 
 section
-	margin-left : $navwidth
-	border-left : 4px
-	padding-left : 4px
-	//border-left : 1px gray ridge
-	//min-height : 600px
+	position : absolute
+	top : $navwidth * 0.4
+	left : $navwidth
 
 h1
-	font-size : 400%
+	font-size : 200%
 	text-align : center
-	//text-decoration : underline
 
 h2
 	font-size : 300%
 	font-style: italic
 	margin-left : 10px
 	margin-right : 10px
+
+table,th,td,tr
+	border : 1px gray ridge
+
+.panneau
+	min-width : $panneau-size
+	height : $panneau-size
+
+.desc
+	width : 85vw
