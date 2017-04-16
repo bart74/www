@@ -1,5 +1,5 @@
 <?php
-$title = 'titre';
+$title = 'Historique';
 include('../template/header.html');
 ?>
 <!--insert some markup-->

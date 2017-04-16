@@ -1,5 +1,5 @@
 <?php
-$title = 'titre';
+$title = 'Dangers';
 include('../template/header.html');
 ?>
 <!--insert some markup-->
