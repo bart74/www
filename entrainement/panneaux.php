@@ -8,46 +8,26 @@ include('../template/header.html');
     <th>Panneau</th>
     <th>Signification</th>
   </tr>
-  <tr>
-    <td class='panneau'><img src='/ressources/panneaux/sign1.png' alt='un panneau'/></td>
-    <td class='desc'>Dromadaire</td>
-  </tr>
-  <tr>
-    <td class='panneau'><img src='/ressources/panneaux/sign2.png' alt='un panneau'/></td>
-    <td class='desc'>Chameau</td>
-  </tr>
-  <tr>
-    <td class='panneau'><img src='/ressources/panneaux/sign3.png' alt='un panneau'/></td>
-    <td class='desc'>MICHAEL FUCKING BAY!</td>
-  </tr>
-  <tr>
-    <td class='panneau'><img src='/ressources/panneaux/sign4.png' alt='un panneau'/></td>
-    <td class='desc'>Beeeeeeeh</td>
-  </tr>
-  <tr>
-    <td class='panneau'><img src='/ressources/panneaux/sign5.png' alt='un panneau'/></td>
-    <td class='desc'>Trompettes interdites</td>
-  </tr>
-  <tr>
-    <td class='panneau'><!--img--></td>
-    <td class='desc'>blabla</td>
-  </tr>
-  <tr>
-    <td class='panneau'><!--img--></td>
-    <td class='desc'>blabla</td>
-  </tr>
-  <tr>
-    <td class='panneau'><!--img--></td>
-    <td class='desc'>blabla</td>
-  </tr>
-  <tr>
-    <td class='panneau'><!--img--></td>
-    <td class='desc'>blabla</td>
-  </tr>
-  <tr>
-    <td class='panneau'><!--img--></td>
-    <td class='desc'>blabla</td>
-  </tr>
+
+    <?php
+    try {
+        $db = new PDO("mysql:host=localhost;dbname=securoute", "root", "");
+    } catch (PDOException $e) {
+        echo $e;
+    }
+
+    $query = "SELECT * FROM panneaux";
+    $prep = $db->prepare($query);
+    $prep->execute();
+
+    $data = $prep->fetchAll();
+
+    foreach ($data as $key => $value) { ?>
+        <tr>
+            <td class='panneau'><img src="<?= $value['img'] ?>" /></td>
+            <td class='desc'> <?= $value['description'] ?> </td>
+        </tr>
+    <?php } ?>
 </table>
 
 <?php
