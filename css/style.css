@@ -1,3 +1,11 @@
+.fullscreen {
+  width: calc(100vw - 200px);
+  height: calc(100vh - 80px);
+  position: fixed;
+  top: 80px;
+  left: 200px;
+  z-index: 999; }
+
 body {
   font-family: "Times New Roman", Georgia, Serif; }
 
@@ -12,7 +20,7 @@ body {
   right: 0;
   left: 200px;
   height: 80px;
-  z-index: 999;
+  z-index: 998;
   line-height: 0;
   color: black; }
 
@@ -40,7 +48,7 @@ nav {
   border-right: 1px gray ridge;
   min-height: 100vh;
   background-color: #FFFFFF;
-  z-index: 998;
+  z-index: 997;
   background: url("/ressources/bgnav.png");
   color: orange;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }

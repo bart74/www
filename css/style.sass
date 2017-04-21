@@ -1,6 +1,13 @@
 $navwidth : 200px
 $panneau-size : 120px
 
+iframe
+	width: calc(100vw - #{$navwidth})
+	height: calc(100vh - #{$navwidth * 0.4})
+	position: fixed
+	top: $navwidth * 0.4
+	left: $navwidth
+
 body
 	font-family : "Times New Roman" , Georgia , Serif
 
