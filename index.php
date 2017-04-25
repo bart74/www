@@ -1,6 +1,6 @@
 <?php
 $title = 'Accueil';
-include('/template/header.html');
+include('./template/header.html');
 ?>
 
 <!--insert some markup-->
@@ -8,5 +8,5 @@ include('/template/header.html');
 <p></p>
 
 <?php
-include('/template/footer.html');
+include('./template/footer.html');
 ?>
