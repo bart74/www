@@ -1,12 +1,13 @@
-iframe {
-  width: calc(100vw - 200px);
-  height: calc(100vh - 80px);
-  position: fixed;
-  top: 80px;
-  left: 200px; }
-
 body {
-  font-family: "Times New Roman", Georgia, Serif; }
+  font-family: "Times New Roman", Georgia, Serif;
+  overflow-x: hidden; }
+
+canvas {
+  z-index: 999;
+  position: absolute;
+  left: 210px;
+  top: 255px;
+  border: yellow ridge 10px; }
 
 .logo {
   width: 200px; }
@@ -19,7 +20,7 @@ body {
   right: 0;
   left: 200px;
   height: 80px;
-  z-index: 999;
+  z-index: 998;
   line-height: 0;
   color: darkgray;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -49,7 +50,7 @@ nav {
   border-right: 1px gray ridge;
   min-height: 100vh;
   background-color: #FFFFFF;
-  z-index: 998;
+  z-index: 997;
   background: url("/ressources/bgnav.png");
   color: orange;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
@@ -68,6 +69,14 @@ section {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: white; }
 
+p {
+  margin-left: 10px; }
+
+.conseils {
+  margin-left: 10px;
+  margin-right: 27px;
+  width: calc(100vw - 230px); }
+
 h1 {
   font-size: 400%;
   text-align: center; }
@@ -78,7 +87,7 @@ h2 {
   margin-left: 10px;
   margin-right: 10px; }
 
-li {
+nav li {
   position: relative;
   left: -20px;
   list-style-type: none;
@@ -91,15 +100,18 @@ ul li ul {
 table, th, td, tr {
   border: 1px gray ridge; }
 
+table {
+  width: calc(100vw - 217px); }
+
 .panneau {
-  min-width: 120px;
+  width: 120px;
   height: 120px; }
   .panneau img {
     width: inherit;
     height: inherit; }
 
 .desc {
-  width: 85vw; }
+  width: calc(100vw - 337px); }
 
 .credits {
   position: absolute;

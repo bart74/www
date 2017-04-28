@@ -1,5 +1,5 @@
 <?php
-$title = 'Historique';
+$title = 'Statistiques contraventions';
 include('../template/header.html');
 ?>
 <!--insert some markup-->

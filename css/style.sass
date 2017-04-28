@@ -1,15 +1,16 @@
 $navwidth : 200px
 $panneau-size : 120px
 
-iframe
-	width: calc(100vw - #{$navwidth})
-	height: calc(100vh - #{$navwidth * 0.4})
-	position: fixed
-	top: $navwidth * 0.4
-	left: $navwidth
-
 body
 	font-family : "Times New Roman" , Georgia , Serif
+	overflow-x: hidden
+
+canvas
+	z-index: 999
+	position: absolute
+	left: $navwidth + 10px
+	top: $navwidth * 0.4 + 175px
+	border: yellow ridge 10px
 
 .logo
 	width : $navwidth
@@ -22,7 +23,7 @@ body
 	right : 0
 	left : $navwidth
 	height : $navwidth * 0.4
-	z-index: 999
+	z-index: 998
 	line-height: 0
 	color : darkgray
 	text-shadow : -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000
@@ -53,7 +54,7 @@ nav
 	border-right : 1px gray ridge
 	min-height : 100vh
 	background-color: #FFFFFF
-	z-index: 998
+	z-index: 997
 	background : url('/ressources/bgnav.png')
 	color : orange
 	text-shadow : -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000
@@ -72,6 +73,14 @@ section
 	text-shadow : -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000
 	color: white
 
+p
+	margin-left: 10px
+
+.conseils
+	margin-left: 10px
+	margin-right: 27px
+	width : calc(100vw - #{$navwidth + 30px})
+
 h1
 	font-size : 400%
 	text-align : center
@@ -82,12 +91,13 @@ h2
 	margin-left : 10px
 	margin-right : 10px
 
-li
-	position: relative
-	left : -20px
-	list-style-type: none
-	list-style-position: outside
-	width: $navwidth
+nav
+	li
+		position: relative
+		left : -20px
+		list-style-type: none
+		list-style-position: outside
+		width: $navwidth
 
 ul
 	li
@@ -97,15 +107,18 @@ ul
 table,th,td,tr
 	border : 1px gray ridge
 
+table
+	width : calc(100vw - #{$navwidth + 17px})
+
 .panneau
-	min-width : $panneau-size
+	width : $panneau-size
 	height : $panneau-size
 	img
 		width: inherit
 		height: inherit
 
 .desc
-	width : 85vw
+	width: calc(100vw - #{$navwidth + $panneau-size + 17px})
 
 .credits
 	position : absolute
@@ -113,4 +126,3 @@ table,th,td,tr
 	left : $navwidth / 2
 	margin-left: 10px
 	margin-bottom: 10px
-	//float : bottom
